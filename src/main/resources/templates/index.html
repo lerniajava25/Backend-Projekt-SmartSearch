@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartSearch</title>
+</head>
+<body>
+<h1 th:text="'Welcome to ' + ${appName}">Welcome</h1>
+<form action="/search" method="get">
+    <input type="text" name="query" placeholder="Search..." required>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
